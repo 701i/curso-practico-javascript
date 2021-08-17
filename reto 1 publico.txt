@@ -1,9 +1,0 @@
-retar a un usuario
-cuanto cuesta el boleto del cine
-cuanto cuesta tener todos los steaming
-
-¿cuantas peliculas vez al mes
-cuantas sucripciones tienes (por pelicula) (agrupar peliculas) o en cuantos streaming esta las peliculas
-comparar que es mas barato ir al cine o pagar streaming
-
-recursividad o ciclos
