@@ -4,7 +4,33 @@
   padding: 0;
 }
 body{
+  font-family: sans-serif;
+  background-color: black;
+  color: white;
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+header{
+  text-align: center;
+}
+form{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  letter-spacing: -0.036em
+}
+label{
+
+}
+input{
+  border-radius: 15px;
+  background-color: rgb(18, 20, 20);
+  color: white;
+  width: 50px;
+  padding-left: 4px;
+}
+
+button:hover{
+  cursor: pointer;
 }

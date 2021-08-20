@@ -1,4 +1,5 @@
-//inputs
+function calcularRetiro(){
+  //inputs
 const edad = document.getElementById("edad");
 const edadV = edad.value;
 const ingresoMensual = document.getElementById("ingresoMensual");
@@ -37,18 +38,16 @@ function calcularInteres (){
   }
   return anoAnterior
 }
-
-function calcularRetiro(){
   const resultadoRetiro = document.getElementById("resultadoRetiro");
   if (gastoMensualV >= ingresoMensualV) {
     resultadoRetiro.innerText = "Error: tus gastos igualan o superan tus ingresos";
   } else {
     const metaAhorro = document.getElementById("metaAhorro");
-    metaAhorro.innerText = "Para vivir sin trabajar por " + anosNoProductivos + " años, deberias juntar " + redFinaciera + " a esto se le llama red financiera";
+    metaAhorro.innerText = "Para vivir sin trabajar por " + anosNoProductivos + " años, deberias juntar " + redFinaciera.toLocaleString('en') + " a esto se le llama red financiera";
     const tiempoAhorro = document.getElementById("tiempoAhorro");
     tiempoAhorro.innerText = "Con tu ahorro actual, podrias llegar a concluir tu red financiera en " + tiempoMetaAhorro + " años";
     const interesComp = document.getElementById("interesComp");
-    interesComp.innerText = "Mas sin embargo usando el interes compuesto que elegiste (" + rendimiento.value + "%), en "+ anosProductivos +" años laborables, juntaras " + parseInt(calcularInteres ());
+    interesComp.innerText = "Mas sin embargo usando el interes compuesto que elegiste (" + rendimiento.value + "%), en "+ anosProductivos +" años laborables, juntaras " + parseInt(calcularInteres ()).toLocaleString('en');
   }
 }
 
