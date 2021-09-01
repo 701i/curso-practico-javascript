@@ -11,38 +11,39 @@
   <header>
     <h1>👵Calculadora para el retiro 👴</h1>
     <h2>💰A que edad quieres retirarte y vivir de tus ahorros 💲</h2><br>
-    <h4>El propósito de este formulario no es asustar sobre el futuro, sino crear conciencia de la importancia de ahorrar para una vejez digna.</h4><br>
+    <h4>El propósito de este formulario es crear conciencia sobre la importancia de ahorrar para una vejez digna.</h4><br>
   </header>
   <section>
-    <form action="">
+    <form action="#">
       <label for="edad"> ¿Que edad tienes?
         <input id="edad" type="age"  placeholder="24" required>
       </label>
       <label for="ingresoMensual"> ¿Cuanto ganas al mes?
-        <input id="ingresoMensual" type="text"  placeholder="10000" required>
+        <input id="ingresoMensual" type="number"  placeholder="10000" required>
       </label>
       <label for="gastoMensual"> ¿Cuanto gastas al mes?
-        <input id="gastoMensual" type="text"  placeholder="8000" required>
+        <input id="gastoMensual" type="number"  placeholder="8000" required>
       </label>
       <label for="ahorroMensual"> ¿Cuanto te gustaría ahorrar al mes para tu retiro?
-        <input id="ahorroMensual" type="text"  placeholder="2000" required>
+        <input id="ahorroMensual" type="number"  placeholder="2000" required>
       </label>
       <label for="edadRetiro"> ¿A que edad te quieres retirar?
-        <input id="edadRetiro" type="text"  placeholder="65" required>
+        <input id="edadRetiro" type="number"  placeholder="65" required>
       </label>
       <label for="esperanzaVida"> ¿Cuantos años te gustaría vivir?
-        <input id="esperanzaVida" type="text"  placeholder="85" required>
+        <input id="esperanzaVida" type="number"  placeholder="85" required>
       </label>
       <label for="rendimiento"> ¿Cuanto rendimiento te da tu plan de ahorro?
-        <input id="rendimiento" type="text"  placeholder="7" required>
+        <input id="rendimiento" type="number"  placeholder="7" required>
       </label>
-      <button type="button" onclick="calcularRetiro()">Planear retiro</button>
+      <button  onclick="calcularRetiro()">Planear retiro</button>
     </form><br>
-    <p id="resultadoRetiro"></p><br>
     <p id="metaAhorro"></p><br>
     <p id="tiempoAhorro"></p><br>
     <p id="interesComp"></p><br>
-    </section>
+    <p id="resultadoRetiro"></p><br>
+    <p><i><u>Descargo de responsabilidad:</u> Los cálculos mostrados no consideran la inflación, son para fines didácticos y de referencia</i></p>
+  </section>
   <script src="./calculadoraRetiro.js"></script>
 </body>
 </html>

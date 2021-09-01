@@ -20,9 +20,7 @@ form{
   flex-direction: column;
   letter-spacing: -0.036em
 }
-label{
 
-}
 input{
   border-radius: 15px;
   background-color: rgb(18, 20, 20);
@@ -30,7 +28,32 @@ input{
   width: 50px;
   padding-left: 4px;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
 
 button:hover{
   cursor: pointer;
 }
+details{
+  display: inline;
+}
+
+details[open] {
+  display: contents;
+}
+details p{
+  padding-left: 10px;
+}
+summary{
+  list-style: none;
+  display: inline;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
