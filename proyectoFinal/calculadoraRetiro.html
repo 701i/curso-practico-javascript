@@ -6,14 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
   <title>Calculadora para el retiro</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon//favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon//favicon-16x16.png">
 </head>
 <body>
   <header>
-    <h1>👵Calculadora para el retiro 👴</h1>
-    <h2>💰A que edad quieres retirarte y vivir de tus ahorros 💲</h2><br>
-    <h4>El propósito de este formulario es crear conciencia sobre la importancia de ahorrar para una vejez digna.</h4><br>
+    <header class="header">
+      <ul class="header__menu">
+          <a href="#"><li>Portafolio</li></a>
+          <a href="https://701i.github.io/"><img class="header__logo" src="assets/skullwolf 1.0.png" alt="Logo"></a>
+          <a href="https://701i.github.io/404.html"><li>Blog</li></a>
+      </ul>
   </header>
   <section>
+    <br><h1>👵Calculadora para el retiro 👴</h1>
+    <h2>💰A que edad quieres retirarte y vivir de tus ahorros 💲</h2><br>
+    <h4>El propósito de este formulario es crear conciencia sobre la importancia de ahorrar para una vejez digna.</h4><br>
     <form onsubmit="return false">
       <label for="edad"> ¿Que edad tienes?
         <input id="edad" type="age"  placeholder="24" required>
@@ -42,7 +51,8 @@
     <p id="tiempoAhorro"></p><br>
     <p id="interesComp"></p><br>
     <p id="resultadoRetiro"></p><br>
-    <p><i><u>Descargo de responsabilidad:</u> Los cálculos mostrados no consideran la inflación, son para fines didácticos y de referencia</i></p>
+    <p><i><u>Descargo de responsabilidad:</u> Los cálculos mostrados no consideran la inflación, son para fines didácticos y de referencia</i></p><br>
+    <button><a href="https://701i.github.io/promo/promocion.html">Quiero hacer algo asi</a></button>
   </section>
   <script src="./calculadoraRetiro.js"></script>
 </body>

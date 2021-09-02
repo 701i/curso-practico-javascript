@@ -11,7 +11,39 @@ body{
   justify-content: center;
   flex-direction: column;
 }
-header{
+a{
+  color: rgb(0, 217, 255);
+}
+a:hover{
+  color: rgb(0, 81, 255);
+}
+.header{
+  background-color: rgba(255, 255, 255, 0.1);
+  font-weight: bold;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.header__logo{
+  height: 100px;
+  width: 100%;
+  object-fit:fill;
+}
+.header__menu{
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  display: inherit;
+  flex-direction: row;
+}
+.header__menu li{
+  list-style: none;
+}
+.header__menu a{
+  text-decoration: none;
+  text-align: center;
+}
+h1,h2,h3,h4{
   text-align: center;
 }
 form{
@@ -55,5 +87,14 @@ summary{
   display: inline;
   background: rgba(255, 255, 255, 0.5);
   border-radius: 10px;
+}
+section button{
+  display: block;
+  margin: 0 auto;
+}
+button a{
+color: black;
+text-decoration: none;
+
 }
 
